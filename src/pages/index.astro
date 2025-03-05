@@ -1,11 +1,28 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import profile from "../assets/photo-MR.png"; // Cambiado a barra diagonal
 ---
 
 <Layout>
-	<Welcome />
+  <section id="home" class="flex flex-col">
+    <article
+      class="text-gray-950 dark:text-white text-pretty mx-auto flex flex-col md:flex-row items-center gap-6"
+    >
+      <img
+        src={profile.src}
+        alt="Maria Rivera"
+        class="w-40 h-40 rounded-full object-cover"
+      />
+      <div>
+        <h1 class="text-4xl md:text-6xl font-bold max-w-screen-sm">
+          Welcome 👋, I'm Maria Rivera
+        </h1>
+        <div class="flex flex-col gap-6 mt-8">
+          <h2 class="font-bold text-xl sm:text-2xl">
+            Available to help you with:
+          </h2>
+        </div>
+      </div>
+    </article>
+  </section>
 </Layout>
