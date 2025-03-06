@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Economic Analysis Tool",
+    "description": "Economic Analysis Tool is a web application developed as part of a capstone project at CODELCO. It automates the technical-economic analysis process by reducing evaluation times from 6 weeks to 2, with data processing in under one minute. The project also features a supplier evaluation system that utilizes Python and advanced multicriteria decision-making methods (TOPSIS, Fuzzy AHP) to enhance efficiency.",
+    "urlImg": "/projects/codelco_tool.webp",
+    "link": "https://gitlab.com/capstone-codelco/Economic_Analysis_Tool"
+  },
+  {
+    "name": "OpenMobile",
+    "description": "OpenMobile is a mobile application developed in React Native, featuring a Jira-inspired task management system. It is built on a robust microservices architecture that ensures scalability, real-time updates, and efficient communication. This project demonstrates modern mobile development practices by integrating enterprise-level functionalities for managing mobile workflows.",
+    "urlImg": "/projects/gira.webp",
+    "link": "https://gitlab.com/openmobile1"
+  }
+]

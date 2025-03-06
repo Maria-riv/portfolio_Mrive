@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar.astro";
 import "../styles/global.css";
 import background from "../assets/background.svg";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -12,7 +13,7 @@ import background from "../assets/background.svg";
     <link
       rel="icon"
       type="image/svg+xml"
-      href="https://cdn-icons-png.flaticon.com/128/18775/18775844.png"
+      href="https://img.icons8.com/stickers/50/briefcase--v2.png"
     />
     <meta name="generator" content={Astro.generator} />
     <title>Maria's Portfolio</title>
@@ -39,6 +40,7 @@ import background from "../assets/background.svg";
     <main class="max-w-screen-lg mx-auto p-6 flex flex-col gap-12">
       <slot />
     </main>
+    <Footer />
   </body>
   <style is:global>
     * {

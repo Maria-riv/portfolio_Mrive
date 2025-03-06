@@ -1,0 +1,21 @@
+[
+    {
+      "dates": "August 2024 - January 2025",
+      "company": "CODELCO",
+      "description": "I developed a web application that reduced the technical-economic analysis process from 6 weeks to 2, enabling data loading and processing in under 1 minute. I also created a supplier evaluation system using Python and multicriteria methods (TOPSIS, Fuzzy AHP), achieving a 78.7% match with manual adjudications. Additionally, I coordinated interdisciplinary teams under the Scrumban framework and designed a Streamlit interface for data visualization, report generation, and error detection.",
+      "svgIcon": "<svg class='size-4 text-gray-600 dark:text-gray-400' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path stroke-linecap='round' stroke-width='2' d='M8 8V6a2 2 0 012-2h4a2 2 0 012 2v2' /><path stroke-linecap='round' stroke-width='2' d='M4 14l3.15.787a20 20 0 009.7 0L20 14' /><path stroke-linejoin='round' stroke-width='2' d='M4 10a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H6a2 2 0 01-2-2v-8z' /><circle cx='12' cy='12' r='1' /></svg>"
+    },
+    {
+      "dates": "2021 - 2024",
+      "company": "Universidad Católica del Norte",
+      "description": "I provided academic support through tutoring and assistant roles in Programming, Deep Learning, and Software Engineering courses, employing innovative strategies to facilitate learning. I also organized robotics workshops for girls using Lego robots (STEM Project) with support from companies such as Finning and CMP, inspiring interest in technology and fostering a collaborative environment.",
+      "svgIcon": "<svg class='size-4 text-gray-600 dark:text-gray-400' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path stroke-linecap='round' stroke-width='2' d='M12 20l9-5-9-5-9 5 9 5z' /><path stroke-linecap='round' stroke-width='2' d='M12 12l9-5-9-5-9 5 9 5z' /></svg>"
+    },
+    {
+      "dates": "July 2023 - September 2023",
+      "company": "Valuelist Spa",
+      "description": "I contributed to the development of a web application using Angular, Docker, GCP, Ruby, and PostgreSQL, quickly adapting to new technologies. I implemented technical solutions to solve complex challenges within a multidisciplinary team, consistently meeting tight deadlines.",
+      "svgIcon": "<svg class='size-4 text-gray-600 dark:text-gray-400' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path stroke-linecap='round' stroke-width='2' d='M4 4h16v16H4z' /><path stroke-linecap='round' stroke-width='2' d='M8 12h8' /></svg>"
+    }
+  ]
+  

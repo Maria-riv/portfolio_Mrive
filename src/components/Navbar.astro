@@ -1,16 +1,17 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../../public/logo.webp"
+import logoGif from "../assets/icon-cloud.gif";
 
 const { pathname } = Astro.url;
 
 let links: string[];
-const linkNames = ["Home", "About", "Projects", "Services"];
+const linkNames = ["Home", "About", "Projects"];
 
 if (pathname == "/") {
-  links = ["#home", "#about", "#projects", "#services"];
+  links = ["#home", "#about", "#projects"];
 } else {
-  links = ["/", "/#about", "/projects", "/#services"];
+  links = ["/", "/#about", "/projects"];
 }
 ---
 
@@ -19,8 +20,8 @@ if (pathname == "/") {
 >
   <a href="/">
     <Image
-      src="/logo.webp"
-      class="size-16 object-contain object-center bg-transparent"
+      src={logoGif}
+      class="size-8 object-contain object-center bg-transparent"
       alt="Logo"
       width={64}
       height={64}

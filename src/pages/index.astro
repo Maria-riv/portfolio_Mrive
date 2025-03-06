@@ -1,28 +1,173 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import profile from "../assets/photo-MR.png"; // Cambiado a barra diagonal
+import profile from "../assets/photo-MR.png";
+import Card from "../components/Card.astro";
+import EXPERIENCES from "../assets/collections/experiences.json";
+import TimelineItem from "../components/TimelineItem.astro";
+import PROJECTS from "../assets/collections/projects.json";
+import Project from "../components/project.astro";
+
 ---
 
 <Layout>
-  <section id="home" class="flex flex-col">
+  <section id="home" class="flex flex-col items-center py-12">
     <article
-      class="text-gray-950 dark:text-white text-pretty mx-auto flex flex-col md:flex-row items-center gap-6"
+      class="text-gray-950 dark:text-white text-center md:text-left flex flex-col md:flex-row items-center gap-8 max-w-4xl mx-auto"
     >
       <img
         src={profile.src}
-        alt="Maria Rivera"
-        class="w-40 h-40 rounded-full object-cover"
+        alt="Maria Luisa Rivera"
+        class="w-48 h-48 rounded-full object-cover shadow-xl border-4 border-gray-300 dark:border-gray-700"
       />
-      <div>
-        <h1 class="text-4xl md:text-6xl font-bold max-w-screen-sm">
-          Welcome 👋, I'm Maria Rivera
+      <div class="flex flex-col gap-6">
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
+          María Luisa Rivera
         </h1>
-        <div class="flex flex-col gap-6 mt-8">
-          <h2 class="font-bold text-xl sm:text-2xl">
-            Available to help you with:
-          </h2>
-        </div>
+        <h3
+          class="text-lg md:text-2xl font-medium text-gray-700 dark:text-gray-300"
+        >
+          Civil Engineer in Computing & Informatics | Data Analyst | Software
+          Developer
+        </h3>
+        <p class="text-base md:text-lg text-gray-600 dark:text-gray-400">
+          Passionate about transforming data into meaningful insights 🚀 and
+          building innovative software solutions 💡
+        </p>
       </div>
     </article>
+    <div class="mt-6 max-w-4xl mx-auto">
+      <h2
+        class="font-semibold text-lg md:text-xl text-gray-700 dark:text-gray-300"
+      >
+        I can assist you with:
+      </h2>
+      <div class="flex flex-col sm:flex-row gap-4 overflow-hidden relative">
+        <Card className="card">
+          <div
+            class="rounded-full p-4 grid place-content-center bg-green-50 text-green-500 dark:bg-green-950/30 dark:text-green-700 w-fit"
+          >
+            <svg
+              class="size-8"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+            >
+              <!-- Example chart icon path -->
+              <path
+                d="M50 450 L50 300 L100 300 L100 450 Z M150 450 L150 250 L200 250 L200 450 Z M250 450 L250 200 L300 200 L300 450 Z M350 450 L350 150 L400 150 L400 450 Z M450 450 L450 100 L500 100 L500 450 Z M550 450 L550 50 L600 50 L600 450 Z"
+              ></path>
+            </svg>
+          </div>
+          <h2
+            class="font-semibold text-lg sm:text-xl md:text-2xl text-gray-950 dark:text-white"
+          >
+            Data Analysis & Visualization
+          </h2>
+          <p class="text-gray-600 text-sm sm:text-base dark:text-gray-400">
+            Transforming complex data into actionable insights using Python,
+            SQL, and visualization tools like PowerBI and Tableau. I create
+            impactful dashboards and drive strategic decision-making.
+          </p>
+        </Card>
+
+        <Card className="card">
+          <div
+            class="rounded-full p-4 grid place-content-center bg-blue-50 text-blue-500 dark:bg-blue-950/30 dark:text-blue-700 w-fit"
+          >
+            <svg
+              class="size-8"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+            >
+              <path
+                d="M128 32C92.7 32 64 60.7 64 96l0 256 64 0 0-256 384 0 0 256 64 0 0-256c0-35.3-28.7-64-64-64L128 32zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480l486.4 0c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2L19.2 384z"
+              ></path>
+            </svg>
+          </div>
+          <h2
+            class="font-semibold text-lg sm:text-xl md:text-2xl text-gray-950 dark:text-white"
+          >
+            Frontend Development
+          </h2>
+          <p class="text-gray-600 text-sm sm:text-base dark:text-gray-400">
+            I have experience building dynamic and responsive user interfaces
+            using Angular, React, and Astro. I focus on turning designs into
+            clean, efficient, and maintainable code to ensure a smooth user
+            experience.
+          </p>
+        </Card>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="flex flex-col">
+    <h2
+      class="text-2xl md:text-4xl font-bold text-gray-950 dark:text-white mb-8"
+    >
+      About Me
+    </h2>
+
+    <article class="flex flex-col md:flex-row gap-4 p-4">
+      <Card className="text-gray-600 dark:text-gray-400 h-fit">
+        <div class="flex flex-col gap-2 text-sm sm:text-base">
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-950 dark:text-white">
+            Short Bio 🧬
+          </h3>
+          <p>
+            Passionate about developing innovative technology solutions and optimizing processes, I have contributed to projects that streamlined technical analysis and data processing.
+          </p>
+          <p>
+            Committed to continuous learning and effective teamwork, I strive to create practical, efficient solutions that make a positive impact.
+          </p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-950 dark:text-white">
+            Want to know a bit more?
+          </h3>
+          <a
+            href="/docs/cv.pdf"
+            role="button"
+            aria-label="Download CV"
+            download
+            class="px-4 py-2 rounded-md bg-blue-600 hover:bg-blue-700 dark:hover:bg-blue-800 dark:bg-blue-700 focus:ring-4 focus:outline-hidden focus:ring-blue-200 dark:focus:ring-blue-950 text-white w-fit font-semibold"
+          >
+            Download CV
+          </a>
+        </div>
+      </Card>
+      <Card className="p-8">
+        <ol class="relative border-s border-gray-300 dark:border-neutral-800">
+          {
+            EXPERIENCES.map((experience) => (
+              <TimelineItem
+                title={experience.company}
+                description={experience.description}
+                date={experience.dates}
+              >
+                <div
+                  slot="icon"
+                  class="size-full p-1"
+                  set:html={experience.svgIcon}
+                />
+              </TimelineItem>
+            ))
+          }
+        </ol>
+      </Card>
+    </article>    
+  </section>
+  <section id="projects" class="flex flex-col items-center py-12">
+    <h2
+      class="text-2xl md:text-4xl font-bold text-gray-950 dark:text-white mb-8"
+    >
+      Latest Projects
+    </h2>
+    <div class="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {
+        PROJECTS.filter((__, i) => i < 3).map((project) => (
+          <Project project={project} />
+        ))
+      }
+    </div>
   </section>
 </Layout>
